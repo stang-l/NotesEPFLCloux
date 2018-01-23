@@ -1769,7 +1769,7 @@ $\to$ Ainsi, dans le cas d'une source systématique avec charge équilibrée, il
 	\caption{Raccord en triangle}
 	\label{fig: charge triphase triangle}
 \end{figure}
-Similairement au précédent, ce modèle est intéressant car dans celui-ci, \uline{les tensions de phase se confondent avec les tensions \textit{simples}}. Quant aux courants de phase, ils sont à nouveau définis comme savons le faire, avec des phaseurs :
+Similairement au précédent, ce modèle est intéressant car dans celui-ci, \uline{les tensions de phase se confondent avec les tensions \textit{de ligne}}. Quant aux courants de phase, ils sont à nouveau définis comme savons le faire, avec des phaseurs :
 
 \setstretch{1.5}
 \begin{equation*}
@@ -2769,8 +2769,8 @@ Cette matrice établit des relations entre les grandeurs de l'entrée et celles 
 	\uu_2\\
 	-\ui_2
 	\end{bmatrix} \iff \left\{\begin{array}{l}
-\uu_1 = \ua\uu_2 + \ub\ui_2\\
-\ui_1 = \uc\uu_2 + \ud\ui_2
+\uu_1 = \ua\uu_2 - \ub\ui_2\\
+\ui_1 = \uc\uu_2 - \ud\ui_2
 \end{array}\right.
 \label{equ: matrice chaine}
 \end{equation}
@@ -2779,7 +2779,7 @@ A nouveau, nous déterminons les paramètres de la matrice de chaîne :
 	\ua = \left.\frac{\uu_1}{\uu_2}\right|_{\ui_2 = 0} \qquad
 	\ub = \left.-\frac{\uu_1}{\ui_2}\right|_{\uu_2 = 0} \qquad
 	\uc = \left.\frac{\ui_1}{\uu_2}\right|_{\ui_2 = 0} \qquad
-	\ud = \left.-\frac{\ui_2}{\ui_2}\right|_{\ui_2 = 0}
+	\ud = \left.-\frac{\ui_1}{\ui_2}\right|_{\uu_2 = 0}
 \end{equation}
 Les paramètres inverses de chaîne sont quant à eux donnés par :
 \begin{equation}
